@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  statefp: 1
+  placefp: 1
+  concat: MyString
+  city: MyString
+  state: MyString
+  placename: MyString
+  county: MyString
+
+two:
+  statefp: 1
+  placefp: 1
+  concat: MyString
+  city: MyString
+  state: MyString
+  placename: MyString
+  county: MyString

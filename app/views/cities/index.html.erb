@@ -1,0 +1,32 @@
+<table>
+	<thead>
+		<tr>
+			<th>statefp</th>
+			<th>placefp</th>
+			<th>concat</th>
+			<th>city</th>
+			<th>state</th>
+			<th>placename</th>
+			<th>county</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @cities.each do |city| %>
+			<tr>
+				<td><%=city.statefp%></td>
+				<td><%=city.placefp%></td>
+				<td><%=city.concat%></td>
+				<td><%=city.city%></td>
+				<td><%=city.state%></td>
+				<td><%=city.placename%></td>
+				<td><%=city.county%></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<div>
+<h2>Import Cities</h2>
+<%= form_tag import_cities_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

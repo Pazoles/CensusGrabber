@@ -1,0 +1,288 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$gray-medium-light: #eaeaea;
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+  }
+  
+  @mixin box_corners {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+  }
+  
+  body{
+    font-family:"Helvetica Neue";
+    text-align: center;
+  }
+  .btn-xl {
+    width:100%;
+    max-width:590px;
+    min-width:300px;
+    padding: 18px 28px;
+      font: 20px "Open Sans Condensed";
+    border-radius: 8px;
+    margin: 30px auto 0px;
+      display:block;
+        background-color:#73C2BE;
+  color:#20172C;
+}
+
+.panel-default{
+  margin:0 auto;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+.panel-header{
+  margin:0 auto;
+  min-width: 400px;
+  max-width: 600px;
+  box-shadow: none;
+}
+
+.header{
+        font: 30px "Open Sans Condensed";
+
+}
+.panel-heading{
+  background-color:#73C2BE;
+  color:#20172C;
+}
+
+th{
+    text-align: center !important;
+      font: 20px "Open Sans Condensed";
+
+}
+
+.btn-group {
+  margin: 0 auto;
+  font-size: 3em;
+}  
+  
+li.soulmate-suggestion{
+  text-align: left;
+}
+
+/* forms */
+.rsvph2 {
+  font-family: "Open Sans Condensed";
+  font-size:5em;
+  font-weight:800;
+width: 100%;
+min-width:300px;
+text-align:center;
+}
+
+.h6rsvp {
+    font-family: "Open Sans Condensed";
+    text-align:center;
+
+}
+
+#search{
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  max-width:590px;
+  min-width:300px;
+  font: 19px;
+
+}
+
+.submit{
+  width:60%;
+  min-width:300px;
+  margin: 20px auto;
+}
+
+#formsubmit {
+  line-height:4em;
+}
+
+.guest_form {
+  width:60%;
+      min-width:300px;
+
+  margin: 20px auto;
+  padding:10px;
+  border-radius: 6px;
+  h4 {
+    text-align:center;
+  }
+}
+
+
+h1.guest_name {
+    padding:30px 0 10px 0;
+      font-family: "Open Sans Condensed";
+      font-size: 4em;
+      font-weight: 800;
+      text-align:center;
+      min-width:250px;
+
+  }
+h3.guest_name {
+    margin:0 auto;
+  }
+
+.guest_name {
+  width:60%;
+  margin: 0 auto;
+  text-align:center;
+}
+
+ .bootstrap-switch {
+     margin: 0 auto;
+  width: 50px;
+  display:block;
+  .bootstrap-switch-handle-on, .bootstrap-switch-handle-off, .bootstrap-switch-label{
+  line-height:3em;
+ }}
+
+ .bootstrap-switch .bootstrap-switch-handle-on, .bootstrap-switch .bootstrap-switch-handle-off, .bootstrap-switch .bootstrap-switch-label{
+  line-height:3em;
+
+}
+
+.attending-label{
+  width: 100%;
+text-align:center;
+margin-top: 20px;
+}
+
+.formlabel {
+  margin-top: 10px;
+  margin-left: 20px;
+
+}
+
+.panel-heading{
+  text-align:center;
+}
+.panel {
+  margin-top: 10px;
+  margin-top: 30px;
+}
+
+
+
+#editgroup {
+  display: inline-block;
+  width: 12px;
+}
+
+.noshow {
+  display:none;
+}
+
+input, textarea, select,  .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+#search{
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font: 14px "Helvetica Neue";
+      margin: 10px auto;
+  @include box_sizing;
+  display:block;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+.container {
+  height: 80%;
+  width: 70%;
+  min-width: 300px;
+  margin: auto;
+  padding-top: 10%;
+  padding-left:0;
+  padding-right:0;
+  
+}
+
+/*Success*/
+
+#success{ margin:10% auto;text-align:center;width:50%;    min-width:300px;
+}
+#success div{padding:20px}
+#success div.success{border:3px solid #3B9F55}
+#success div.success h1{color:#3B9F55; padding: 0;}
+
+nav {
+  margin-top:40px; 
+  text-align: center;
+}
+
+.thank_you{
+  width: 50%; 
+    min-width:300px;
+
+  margin: 10% auto 0px;
+  font-family:"Helvetica Neue";
+  font-size:1.3em;
+  text-align:center;
+  line-height: 1.3em;
+  a {
+    text-decoration: underline;
+    color: #337584;
+  }
+  
+  }
+  
+  .thank_you_sm{
+  width: 50%; 
+  min-width:300px;
+  margin: 5% auto 10%;
+  font-family:"Helvetica Neue";
+  font-size:1.3em;
+  text-align:center;
+  line-height: 1.3em;
+  a {
+    text-decoration: underline;
+    color: #337584;
+  }
+  
+  }
+
+/*Already Completed */
+#failure{ margin:10% auto;text-align:center;width:50%;    min-width:300px;
+}
+#failure div{padding:20px}
+#failure div.failure{border:3px solid #AA3939}
+#failure div.failure h1{color:#AA3939; padding: 0;}
